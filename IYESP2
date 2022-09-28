@@ -1,4 +1,3 @@
-if ESPenabled == true then
 local speaker = game.Players.LocalPlayer
 COREGUI = game:GetService("CoreGui")
 if not game:IsLoaded() then
@@ -106,7 +105,7 @@ function ESP(plr)
 	end)
 end
 
-
+if ESPenabled == true then
 for i,v in pairs(game.Players:GetChildren()) do
 			if v.ClassName == "Player" and v.Name ~= speaker.Name then
 				ESP(v)
